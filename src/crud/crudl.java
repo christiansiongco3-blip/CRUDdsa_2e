@@ -62,6 +62,9 @@ public class crudl extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -77,41 +80,53 @@ public class crudl extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(153, 0, 51));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Bodoni MT", 3, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("H4nZ INTERNET CAFE ");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 290, 20));
 
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Player No:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 140, -1));
 
-        jLabel3.setText("Full Name:");
+        jTextField1.addActionListener(this::jTextField1ActionPerformed);
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 40, -1));
+
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setText("Name:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 130, -1, -1));
         getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 130, 140, -1));
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Player Registration");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 50, -1, 30));
 
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("IGN:");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, -1, -1));
         getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 160, 140, -1));
 
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("ADD");
         jButton1.addActionListener(this::jButton1ActionPerformed);
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 200, 80, -1));
 
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setText("UPDATE");
         jButton2.addActionListener(this::jButton2ActionPerformed);
         getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, -1, -1));
 
+        jButton3.setForeground(new java.awt.Color(0, 0, 0));
         jButton3.setText("CLEAR");
         jButton3.addActionListener(this::jButton3ActionPerformed);
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, -1, -1));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 80, -1));
 
+        jButton4.setForeground(new java.awt.Color(0, 0, 0));
         jButton4.setText("DELETE");
         jButton4.addActionListener(this::jButton4ActionPerformed);
         getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 230, -1, -1));
@@ -131,7 +146,22 @@ public class crudl extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(jTable2);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 370, 280));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 400, 280));
+
+        jLabel7.setFont(new java.awt.Font("Segoe UI Semibold", 2, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel7.setText("TO GET PROMO:");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI Semibold", 2, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel8.setText("YOU MUST REGISTER");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 140, 150, -1));
+
+        jLabel9.setFont(new java.awt.Font("Segoe UI Semibold", 2, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel9.setText("AND YOU CAN GET 10% OFF");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 160, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -141,7 +171,7 @@ public class crudl extends javax.swing.JFrame {
 
     if (row == -1) {
         JOptionPane.showMessageDialog(this,
-            "Please select a player.");
+            "Pumili ka nga ng iaupdate mo tanga.");
         return;
     }
 
@@ -170,7 +200,7 @@ public class crudl extends javax.swing.JFrame {
         pst.executeUpdate();
 
         JOptionPane.showMessageDialog(this,
-            "Player updated successfully!");
+            "Buti inupdate mo!");
 
         jTextField1.setText("");
         jTextField2.setText("");
@@ -190,7 +220,7 @@ public class crudl extends javax.swing.JFrame {
 
     if (fullName.isEmpty() || ign.isEmpty()) {
         JOptionPane.showMessageDialog(this,
-            "Please enter Full Name and IGN.");
+            "Maglagay ka ng pangalan at ign kung gusto mo madagdagan kampe mo at pera.");
         return;
     }
 
@@ -205,7 +235,7 @@ public class crudl extends javax.swing.JFrame {
         pst.executeUpdate();
 
         JOptionPane.showMessageDialog(this,
-            "Player added successfully!");
+            "Sa wakas nadagdagan ng kampe!");
 
         jTextField1.setText("");
         jTextField2.setText("");
@@ -244,9 +274,7 @@ public class crudl extends javax.swing.JFrame {
     }
 }
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-    model.setRowCount(0);
-
-    jTextField1.setText("");
+     jTextField1.setText("");
     jTextField2.setText("");
     jTextField3.setText("");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -256,7 +284,7 @@ public class crudl extends javax.swing.JFrame {
 
     if (row == -1) {
         JOptionPane.showMessageDialog(this,
-            "Please select a player to delete.");
+            "Mamili ka ng gusto mong alisin para mawalan ka ng customer/pera*.");
         return;
     }
 
@@ -266,7 +294,7 @@ public class crudl extends javax.swing.JFrame {
 
     int confirm = JOptionPane.showConfirmDialog(
         this,
-        "Are you sure you want to delete this player?",
+        "Gusto mo ba mawalan ng customer /pera*?",
         "Confirm Delete",
         JOptionPane.YES_NO_OPTION
     );
@@ -285,7 +313,7 @@ public class crudl extends javax.swing.JFrame {
         pst.executeUpdate();
 
         JOptionPane.showMessageDialog(this,
-            "Player deleted successfully!");
+            "Wala na ubos na nyan pera mo kasi dinelete mo yung customer!");
 
         jTextField1.setText("");
         jTextField2.setText("");
@@ -317,6 +345,10 @@ public class crudl extends javax.swing.JFrame {
         );
     }// TODO add your handling code here:
     }//GEN-LAST:event_jTable2MouseClicked
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -354,6 +386,9 @@ public class crudl extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
