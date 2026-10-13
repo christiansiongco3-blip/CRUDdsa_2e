@@ -12,7 +12,7 @@ import java.sql.SQLException;
  */
 public class MsConnectAccess {
     private static final String URL =
-        "jdbc:ucanaccess://C:/Users/jektong/OneDrive/Desktop/CRUD1.accdb";
+        "jdbc:ucanaccess://C://Users//CL2-PC//Downloads//CRUDACCESSFILE-main//CRUDACCESSFILE-main//CRUD1.accdb";
 
     public static Connection getConnection() throws SQLException {
 
